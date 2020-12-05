@@ -1,0 +1,94 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(10, 4, 22);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url("https://static.photocrowd.com/upl/n7/cms.aRjoiZTxiHcI9Dil_UtA-collection_cover.jpeg") no-repeat center center/cover;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 40%;
+    margin: auto;
+    background: linear-gradient(rgba(64, 143, 90, 0.5), rgba(37, 77, 100, 0.5));
+    padding: 30px;
+    padding-top: 10px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#survey-form {
+    margin: auto;
+    margin-top: 2rem;
+}
+
+#number-label, #email-label, #name-label, label[for="dropdown"], label[for="choice"] {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#number, #email, #name {
+    width: 100%;
+    height: 2rem;
+    resize: both;
+}
+
+#dropdown {
+    width: 50%;
+    height: 2rem;
+}
+
+#radio label {
+    display: inline;
+}
+
+#grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#grid label {
+    display: inline;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 5rem;
+    padding: 10px 10px;
+    background-color: darkslategray;
+    color: white;
+    margin-top: 15px;
+    border: none;
+    resize: both;
+}
+
+textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+@media(max-width: 700px) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
